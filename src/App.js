@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Fragment } from 'react';
+import InputType1 from "./Components/Inputs/Types/InputType1";
+import InputType2 from "./Components/Inputs/Types/InputType2";
+import InputType3 from "./Components/Inputs/Types/InputType3";
+import InputType4 from "./Components/Inputs/Types/InputType4";
+import './Components/Inputs/Input.css';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Fragment>
+            
+            <InputType1
+                name="Email"
+                isPassword={false}
+                placeholder="Ingrese su email"
+                animated={true}
+            />
+            <InputType2
+                placeholder="Ingrese su email"
+                icon="Email"
+                isPassword={false}
+            />
+            <InputType3
+            placeholder="Ingrese su email"
+            icon="Email"
+            isPassword={false}
+            />
+            <InputType4
+            placeholder="Ingrese su email"
+            icon="Email"
+            isPassword={false}
+            name="Email"
+            />
+        </Fragment>
+    );
 }
 
 export default App;
